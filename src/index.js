@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
               item.classList.add(revealClass);
             }
-          }, i * 100);
+          }, i * 250);
         });
       } else {
         if (isGroup && repeatableSections.includes(sectionId)) {
