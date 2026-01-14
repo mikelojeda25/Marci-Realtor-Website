@@ -21,7 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   btn?.addEventListener("click", toggleMenu);
   overlay?.addEventListener("click", toggleMenu);
-
+  // Lazy Loading
+  document.querySelectorAll("img").forEach((img) => {
+    img.setAttribute("loading", "lazy");
+  });
   // --- SCROLL EFFECTS ---
   window.addEventListener("scroll", () => {
     const scrollY = window.scrollY;
